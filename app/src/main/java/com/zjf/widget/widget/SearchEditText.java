@@ -64,7 +64,7 @@ public class SearchEditText extends AppCompatEditText {
     public void setShowSearchDrawable(boolean showSearchDrawable) {
         this.showSearchDrawable = showSearchDrawable;
         if (showSearchDrawable) {
-            searchDrawable = getResources().getDrawable(R.drawable.icon_search_1);
+            searchDrawable = getResources().getDrawable(R.drawable.icon_search);
         } else {
             searchDrawable = null;
         }

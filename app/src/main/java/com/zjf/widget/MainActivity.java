@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        SearchEditText editText = findViewById(R.id.et);
+        final SearchEditText editText = findViewById(R.id.et);
         editText.setOnClearTextListener(new SearchEditText.OnClearTextListener() {
             @Override
             public void onClearTextListener() {

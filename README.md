@@ -2,6 +2,8 @@
 some customized widget
 [TOC]
 ## 圆形ImageView：RoundImageView
+>圆角ImageView，可以单独设置角的不同弧度，当设置为圆形的时候，就不需要设置radius
+
 <img src="https://github.com/zjfcabbage/widget/blob/master/images/roundimageview.png" alt="GitHub" title="GitHub,RoungImageView" width="30%" height="30%" />
 
 ```xml
@@ -60,6 +62,9 @@ some customized widget
       app:type="rectangle" />
 ```
 ## 带清除文本的EditText: SearchEditText
+> 搜索框，默认有清除文本的图标，左侧还有“放大镜”的小图标，默认是隐藏的，放大镜和清除图标可以使用默认自带的，也可以通过属性更换布标，
+可以通过设置监听器监听清除文本的动作
+
 <img src="https://github.com/zjfcabbage/widget/blob/master/images/gifeditor_20190602_195646.gif" alt="GitHub" title="SearchEditText" width="30%" height="30%" />
 <img src="https://github.com/zjfcabbage/widget/blob/master/images/searchEditText.png" alt="GitHub" title="SearchEditText" width="30%" height="30%" />
 
@@ -68,10 +73,9 @@ some customized widget
 | setOnClearTextListener | 设置当点击清除文本时的监听器 |
 | showSearchDrawable | 显示默认的左侧图标 |
 | searchDrawable | 设置左侧图标 |
-| clearDrawable | 设置右侧清楚文本的图标 |
+| clearDrawable | 设置右侧清除文本的图标 |
 
 ```xml
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"/>
 <com.zjf.widget.widget.SearchEditText
     android:id="@+id/et"
     android:layout_width="match_parent"
@@ -110,6 +114,15 @@ editText.setOnClearTextListener(new SearchEditText.OnClearTextListener() {
       }
 });
 ```
+
+## 隐私EditText: PrivacyEditText
+> 隐藏和显示文本的EditText, 类似于密码输入框
+
+| 属性或方法 | 作用 |
+| :-------:| :---:|
+| viewDrawable | 显示文本的图标 |
+| viewOffDrawable | 隐藏文本的图标 |
+
 
 
 
