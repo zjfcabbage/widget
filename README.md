@@ -1,5 +1,6 @@
 # widget
 some customized widget
+
 [TOC]
 ## 圆形ImageView：RoundImageView
 >圆角ImageView，可以单独设置角的不同弧度，当设置为圆形的时候，就不需要设置radius
@@ -118,6 +119,7 @@ editText.setOnClearTextListener(new SearchEditText.OnClearTextListener() {
 ## 隐私EditText: PrivacyEditText
 > 隐藏和显示文本的EditText, 类似于密码输入框
 
+<img src="https://github.com/zjfcabbage/widget/blob/master/images/privacyEditText.gif" alt="GitHub" title="GitHub,PrivacyEditText"/>
 | 属性或方法 | 作用 |
 | :-------:| :---:|
 | viewDrawable | 显示文本的图标 |
