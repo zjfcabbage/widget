@@ -61,6 +61,7 @@ some customized widget
 ```
 ## 带清除文本的EditText: SearchEditText
 <img src="https://github.com/zjfcabbage/widget/blob/master/images/gifeditor_20190602_195646.gif" alt="GitHub" title="SearchEditText" width="30%" height="30%" />
+<img src="https://github.com/zjfcabbage/widget/blob/master/images/searchEditText.png" alt="GitHub" title="SearchEditText" width="30%" height="30%" />
 | 属性或方法 | 作用 |
 | :-------:| :---:|
 | setOnClearTextListener | 设置当点击清除文本时的监听器 |
