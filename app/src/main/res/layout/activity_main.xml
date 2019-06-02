@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:layout_margin="10dp"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -37,12 +37,12 @@
 
         <!--radius和其他单独四个角设置的话，radius属性会覆盖其他属性-->
         <!--<com.zjf.widget.widget.RoundImageView-->
-            <!--android:layout_width="80dp"-->
-            <!--android:layout_height="80dp"-->
-            <!--app:type="rectangle"-->
-            <!--app:radius="8dp"-->
-            <!--android:src="@drawable/zhushu"-->
-            <!--app:left_bottom_radius="8dp"/>-->
+        <!--android:layout_width="80dp"-->
+        <!--android:layout_height="80dp"-->
+        <!--app:type="rectangle"-->
+        <!--app:radius="8dp"-->
+        <!--android:src="@drawable/zhushu"-->
+        <!--app:left_bottom_radius="8dp"/>-->
 
     </LinearLayout>
 
@@ -78,7 +78,29 @@
 
     <com.zjf.widget.widget.SearchEditText
         android:id="@+id/et"
-        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" />
+
+    <!--更换右侧的图标-->
+    <com.zjf.widget.widget.SearchEditText
+        app:clear_drawable="@drawable/icon_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" />
+
+    <!--项目中带有默认的图标-->
+    <com.zjf.widget.widget.SearchEditText
+        app:show_search_drawable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" />
+
+    <!--更换左侧的图标-->
+    <com.zjf.widget.widget.SearchEditText
+        app:search_drawable="@drawable/icon_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" />
+
 </LinearLayout>

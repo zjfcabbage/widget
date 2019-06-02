@@ -11,4 +11,9 @@
         <attr name="right_bottom_radius" format="dimension"/>
         <attr name="radius" format="dimension" />
     </declare-styleable>
+    <declare-styleable name="SearchEditText">
+        <attr name="show_search_drawable" format="boolean"/>
+        <attr name="search_drawable" format="reference"/>
+        <attr name="clear_drawable" format="reference"/>
+    </declare-styleable>
 </resources>
