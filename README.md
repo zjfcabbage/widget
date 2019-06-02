@@ -57,4 +57,5 @@ some customized widget
       app:right_bottom_radius="10dp"
       app:type="rectangle" />
 ```
+<img src="https://github.com/zjfcabbage/widget/blob/master/images/roundimageview.png" alt="GitHub" title="GitHub,RoungImageView" width="30%" height="30%" />
 ![image](https://github.com/zjfcabbage/widget/blob/master/images/roundimageview.png)
