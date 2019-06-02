@@ -1,7 +1,11 @@
 # widget
 some customized widget
 
-[TOC]
+* [widget](#widget)
+  * [圆形ImageView：RoundImageView](#%E5%9C%86%E5%BD%A2imageviewroundimageview)
+  * [带清除文本的EditText: SearchEditText](#%E5%B8%A6%E6%B8%85%E9%99%A4%E6%96%87%E6%9C%AC%E7%9A%84edittext-searchedittext)
+  * [隐私EditText: PrivacyEditText](#%E9%9A%90%E7%A7%81edittext-privacyedittext)
+  
 ## 圆形ImageView：RoundImageView
 >圆角ImageView，可以单独设置角的不同弧度，当设置为圆形的时候，就不需要设置radius
 
