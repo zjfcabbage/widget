@@ -10,7 +10,7 @@ import com.zjf.widget.R;
 
 public class SearchEditText extends AppCompatEditText {
 
-    private Drawable searchDrawable, clearDrawable;
+    private Drawable clearDrawable;
     private OnClearTextListener listener;
 
     public interface OnClearTextListener {
@@ -18,11 +18,13 @@ public class SearchEditText extends AppCompatEditText {
     }
 
     public SearchEditText(Context context) {
-        this(context, null, 0);
+        super(context);
+        init();
     }
 
     public SearchEditText(Context context, AttributeSet attrs) {
-        this(context, attrs, 0);
+        super(context, attrs);
+        init();
     }
 
     public SearchEditText(Context context, AttributeSet attrs, int defStyleAttr) {
@@ -31,8 +33,8 @@ public class SearchEditText extends AppCompatEditText {
     }
 
     private void init() {
-        searchDrawable = getResources().getDrawable(R.drawable.icon_search);
-        setCompoundDrawablesWithIntrinsicBounds(searchDrawable, getCompoundDrawables()[1], getCompoundDrawables()[2], getCompoundDrawables()[3]);
+//        searchDrawable = getResources().getDrawable(R.drawable.icon_search);
+//        setCompoundDrawablesWithIntrinsicBounds(searchDrawable, getCompoundDrawables()[1], getCompoundDrawables()[2], getCompoundDrawables()[3]);
         clearDrawable = getResources().getDrawable(R.drawable.icon_clear);
         setFocusableInTouchMode(true);  //点击的时候弹出软键盘
     }
@@ -62,10 +64,11 @@ public class SearchEditText extends AppCompatEditText {
 
     private void setClearDrawableVisibility(boolean visibile) {
         Drawable right = visibile ? clearDrawable : null;
-        setCompoundDrawablesWithIntrinsicBounds(searchDrawable, getCompoundDrawables()[1], right, getCompoundDrawables()[3]);
+        setCompoundDrawablesWithIntrinsicBounds(getCompoundDrawables()[0], getCompoundDrawables()[1], right, getCompoundDrawables()[3]);
     }
 
     public void setOnClearTextListener(OnClearTextListener listener) {
         this.listener = listener;
     }
+
 }

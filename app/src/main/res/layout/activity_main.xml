@@ -76,4 +76,9 @@
             app:type="rectangle" />
     </LinearLayout>
 
+    <com.zjf.widget.widget.SearchEditText
+        android:id="@+id/et"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </LinearLayout>
