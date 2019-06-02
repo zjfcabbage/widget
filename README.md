@@ -3,6 +3,7 @@ some customized widget
 [TOC]
 ## 圆形ImageView：RoundImageView
 <img src="https://github.com/zjfcabbage/widget/blob/master/images/roundimageview.png" alt="GitHub" title="GitHub,RoungImageView" width="30%" height="30%" />
+
 ```xml
 <com.zjf.widget.widget.RoundImageView
      android:layout_width="80dp"
@@ -61,6 +62,7 @@ some customized widget
 ## 带清除文本的EditText: SearchEditText
 <img src="https://github.com/zjfcabbage/widget/blob/master/images/gifeditor_20190602_195646.gif" alt="GitHub" title="SearchEditText" width="30%" height="30%" />
 xml正常引用```SearchEdittext```，可以添加一个清除文本的监听器
+
 ```java
 SearchEditText editText = findViewById(R.id.et);
 editText.setOnClearTextListener(new SearchEditText.OnClearTextListener() {
@@ -71,3 +73,6 @@ editText.setOnClearTextListener(new SearchEditText.OnClearTextListener() {
       }
 });
 ```
+
+
+
